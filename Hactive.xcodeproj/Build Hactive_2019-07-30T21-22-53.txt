@@ -1,0 +1,13 @@
+
+Showing Recent Messages
+
+Prepare build
+note: Using new build systemnote: Planning buildnote: Constructing build description
+
+Build system information
+error: Unable to resolve build file: XCBCore.BuildFile (namedReferencesCannotBeResolved) (in target 'Hactive')
+Build system information
+error: Unable to resolve build file: XCBCore.BuildFile (namedReferencesCannotBeResolved) (in target 'Hactive')
+
+
+Build failed    30/7/19, 9:22 pm    0.1 seconds

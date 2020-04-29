@@ -1,0 +1,19 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "ae9b9e57cb37931c880a7815d24b434fada7f283",
+  "iOS" : [
+    {
+      "name" : "ResearchKit",
+      "hash" : "1951cf668d182e8be33e07ca510a31bc9168a20a4536eb988daee12317b2e76b",
+      "swiftToolchainVersion" : "5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)"
+    }
+  ]
+}

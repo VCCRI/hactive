@@ -1,0 +1,3 @@
+github "ResearchKit/ResearchKit" "ae9b9e57cb37931c880a7815d24b434fada7f283"
+github "danielgindi/Charts" "v3.5.0"
+github "yaslab/CSV.swift" "2.4.3"
