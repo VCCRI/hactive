@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import Charts
 
+
 class CustomCell: UITableViewCell {
     var chart : LineChartData?
     var message: String?
