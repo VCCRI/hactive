@@ -15,7 +15,6 @@ import CoreData
 import CSV
 import MessageUI
 import Foundation
-import CommonCrypto
 
 // Manage all data pulled from HealthKit
 struct Recording {
@@ -117,7 +116,6 @@ class WorkoutViewController: UIViewController, isAbleToReceiveData {
         self.tableView.register(CustomCell.self, forCellReuseIdentifier: "custom")
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 250
-        
         self.fetchWorkoutCoreData()
     }
     
@@ -141,8 +139,9 @@ class WorkoutViewController: UIViewController, isAbleToReceiveData {
         let csvZone = self.zonesData()
         let csvExtraData = self.getExtraData()
         
-        // Another method for extracting files. Send straight to email
-        // self.sendEmail(csvData: [csvDB, csvRawHealth, csvInterpolated, csvZone])
+        /* Another method for extracting files. Send straight to email
+         self.sendEmail(csvData: [csvDB, csvRawHealth, csvInterpolated, csvZone])
+        */
         self.exportToFile(dataSets: [("Meta Data", csvDB), ("Raw Health Data", csvRawHealth), ("Interpolated Health Data", csvInterpolated), ("Heart Rate Dynamic Profile Workout Zones (start and end indices)", csvZone), ("Extra Data", csvExtraData)])
     }
     
@@ -156,7 +155,6 @@ class WorkoutViewController: UIViewController, isAbleToReceiveData {
         }
         
         do {
-
                 try dataAsString.write(to: path, atomically: true, encoding: String.Encoding.utf8)
                 let vc = UIActivityViewController(activityItems: [path], applicationActivities: [])
                 vc.excludedActivityTypes = [
@@ -172,9 +170,7 @@ class WorkoutViewController: UIViewController, isAbleToReceiveData {
                 present(vc, animated: true, completion: nil)
 
         } catch {
-            
-            print("Failed to create file")
-            print("\(error)")
+            print("Failed to create file: \(error)")
         }
         
     }

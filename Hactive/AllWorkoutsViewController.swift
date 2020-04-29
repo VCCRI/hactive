@@ -39,6 +39,7 @@ class AllWorkoutsViewController: UIViewController {
         super.viewWillAppear(animated)
         getMetaData()
         getWorkouts()
+        
     }
     
     func getDocumentsDirectory() -> URL {
