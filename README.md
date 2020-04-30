@@ -6,8 +6,8 @@ Hactive a fully operational iOS application that extracts heart rate data from A
 
 ### Prerequisites
 
-1. To collect heart rate data you will need access to an Apple Watch.
-2. Hactive requires an iOS device to operate.
+- To collect heart rate data you will need access to an Apple Watch.
+- Hactive requires an iOS device to operate.
 
 ### Installing
 
@@ -24,8 +24,9 @@ Hactive a fully operational iOS application that extracts heart rate data from A
 
 Both running and walking type workouts are compatible with Hactive since these workouts also record GPS activity.
 
-<img src="img/workout-app.png" width="200" height="200">
-<img src="img/indoor-run.png" width="200" height="200">
+
+![Alt text](img/workout-app.png?raw=true "Apple Watch Workout App")
+![Alt text](img/indoor-run.png?raw=true "Indoor Run Workout")
 
 2. Open Hactive application on your iPhone to view the list of workouts. Select a workout to see a detailed graphical view along with the associated heart rate dynamic profiles.
 
