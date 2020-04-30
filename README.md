@@ -23,7 +23,7 @@ Hactive a fully operational iOS application that extracts heart rate data from A
 1. Record workouts on your Apple watch using the default workout application.
 
 ![Alt text](img/workout-app.png?raw=true "Workout type"){:height="700px" width="400px"}
-
+<img src="img/workout-app.png" width="100" height="100">
 Both running and walking type workouts are compatible with Hactive since these workouts also record GPS activity.
 
 ![Alt text](img/indoor-run.png?raw=true "Workout type"){:height="700px" width="400px"}
