@@ -22,11 +22,11 @@ Hactive a fully operational iOS application that extracts heart rate data from A
 
 1. Record workouts on your Apple watch using the default workout application.
 
-![Alt text](img/workout-app.png?raw=true "Workout type"){:height="700px" width="400px"}
-<img src="img/workout-app.png" width="100" height="100">
+
+<img src="img/workout-app.png" width="150" height="150">
 Both running and walking type workouts are compatible with Hactive since these workouts also record GPS activity.
 
-![Alt text](img/indoor-run.png?raw=true "Workout type"){:height="700px" width="400px"}
+<img src="img/indoor-run.png" width="150" height="150">
 
 2. Open Hactive application on your iPhone to view the list of workouts. Select a workout to see a detailed graphical view along with the associated heart rate dynamic profiles.
 
