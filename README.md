@@ -26,7 +26,7 @@ Hactive a fully operational iOS application that extracts heart rate data from A
 <img src="img/workout-app.png" width="150" height="150">
 Both running and walking type workouts are compatible with Hactive since these workouts also record GPS activity.
 
-<img src="img/indoor-run.png" width="150" height="150">
+<img src="img/indoor-run.png" width="150" height="200">
 
 2. Open Hactive application on your iPhone to view the list of workouts. Select a workout to see a detailed graphical view along with the associated heart rate dynamic profiles.
 
@@ -38,7 +38,10 @@ Both running and walking type workouts are compatible with Hactive since these w
 
 6. The data can be exported as a CSV file.
 
+A default consent form is available in the application. Manipulate it for your scientific study.
+
 ![Alt text](img/labelling-data.png?raw=true "Labelling Data")
+![Alt text](img/consent-form.png?raw=true "Consent Form")
 
 ### Calculating HRDP
 
@@ -68,12 +71,6 @@ We have utilised the Swifts Core Data framework which is used to manage the mode
 Swift has a medically orientated API ‘ResearchKit’, which was designed to support researchers and clinicians in conduct- ing studies and collecting sensitive data. This kit allows med- ical researches to embed consent flows, surveys and real-time dynamic, active tasks into an application. A template consent form has been installed in Hactive to allow future researchers to incorporate their own approved consent document once one is created. Like ResearchKit, HealthKit was developed to manage, monitor and safely store sensitive medical health data. To avoid the management of sensitive data such as heart rate, Hactive has offloaded this to HealthKit (https://developer.apple.com/health-fitness/). By making fetch requests to HealthKit rather than storing the data within the application, we avoid managing the massive data pile that will inevitably build up as a result of recording and storing workouts as well as the security risks associated with this data 
 
 As a simple evaluation, we recorded twenty-five workouts, which were stored in HealthKit on a test mobile device. Extraction of all these workouts from HealthKit took an average of 0.15 seconds. Of the twenty-five workouts, the average length is twenty-seven minutes. To load a single workout of this length takes 0.5 seconds. The longest workout of 104 minutes, took 4.0 seconds to load, which we attribute to the increase in the number of HRDP extracted during such a lengthy exercise. We are generally comfortable with the runtime performance.
-
-### Consent form
-
-A default consent form is available in the application. Manipulate it for your scientific study.
-
-![Alt text](img/consent-form.png?raw=true "Consent Form")
 
 ## Privacy
 
