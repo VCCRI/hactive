@@ -20,21 +20,23 @@ Hactive a fully operational iOS application that extracts heart rate data from A
 
 ### User flow
 
-Record workouts on your Apple watch using the default workout application.
-![Alt text](img/workout.png?raw=true "Workout type")
+1. Record workouts on your Apple watch using the default workout application.
 
-Both running and walking type workouts are compatible with Hactive since these workouts also record GPS activity. 
+![Alt text](img/workout-app.png?raw=true "Workout type")
+
+Both running and walking type workouts are compatible with Hactive since these workouts also record GPS activity.
+
 ![Alt text](img/indoor-run.png?raw=true "Workout type")
 
-Open Hactive application on your iPhone to view the list of workouts. Select a workout to see a detailed graphical view along with the associated heart rate dynamic profiles.
+2. Open Hactive application on your iPhone to view the list of workouts. Select a workout to see a detailed graphical view along with the associated heart rate dynamic profiles.
 
-Add a title and a description of the workout along with the age and weight of the person who's workout this belongs to.
+3. Add a title and a description of the workout along with the age and weight of the person who's workout this belongs to.
 
-Age and weight are used to determine the HRDP's of each workout. If no value is set, Hactive will take the values stored in Apples health app. Failing that, it will default to `age = 60` and `weight = 60kg`. 
+4. Age and weight are used to determine the HRDP's of each workout. If no value is set, Hactive will take the values stored in Apples health app. Failing that, it will default to `age = 60` and `weight = 60kg`. 
 
-If you are using this application as a researcher you will need to enter the details of the user corresponding to each workout. If however, you are using the application for personal use, simple set this data once in the Apple's health application.  
+5. If you are using this application as a researcher you will need to enter the details of the user corresponding to each workout. If however, you are using the application for personal use, simple set this data once in the Apple's health application.  
 
-The data can be exported as a CSV file.
+6. The data can be exported as a CSV file.
 
 ![Alt text](img/labelling-data.png?raw=true "Labelling Data")
 
@@ -85,8 +87,8 @@ Hactive takes your privacy very seriously.
 
 ## Authors
 
-* **Adam Goldberg** - *Initial work* - [PurpleBooth](https://bitbucket.org/algoadam/)
-* **Dr. Joshua Ho** - *Initial work*
+* **Adam Goldberg** - *Initial work* - [LinkedIn](https://www.linkedin.com/in/goldadamb/)
+* **Dr. Joshua Ho** - *Initial work*  - [Other Research](https://scholar.google.com/citations?hl=en&user=3kVPIhQAAAAJ&view_op=list_works&sortby=pubdate)
 
 ## License
 
