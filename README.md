@@ -6,15 +6,15 @@ Hactive a fully operational iOS application that extracts heart rate data from A
 
 ### Installing
 
-Device Prerequisites
- ⋅⋅* To collect heart rate data you will need access to an Apple Watch with the apple workout app installed.
- ⋅⋅* Hactive requires an iOS device to operate. 
+Device prerequisites
+ * To collect heart rate data you will need access to an Apple Watch with the apple workout app installed.
+ * Hactive requires an iOS device to operate. 
 
-Software Prerequisites
-1. Hactive uses Carthage as it's dependency manager. Install it using `brew install carthage` or follow the install guide on the [github](https://github.com/Carthage/Carthage)
-2. Hactive requires Xcode and Swift v5
+Software prerequisites
+1. Hactive uses Carthage as it's dependency manager. Install it using `brew install carthage` or follow the install guide on [github](https://github.com/Carthage/Carthage).
+2. Hactive requires Xcode and Swift 5.
 
-Install Steps
+Install steps
 1. Clone this repository.
 2. Open the `.xcodeproj` file.
 3. Connect your iOS device build the application.
@@ -23,7 +23,7 @@ Install Steps
 
 Under Hactive's current implementation, we have decided not to put the app on the app store. As such, when you download and use this application through Xcode, the code-signing tool only validates the app for 7 days. This means that after this period, the app will cease to work and will require you to build it again through Xcode. We understand the inconvenience this causes to the fundamental usability of the application. However, until we decide the app is ready for the app store, this problem will subsist. The silver lining is that because the data is managed by Apple's Health app, the data will persist after the application reinstalls.
 
-## How it works
+## How It Works
 
 ### User flow
 
@@ -40,17 +40,9 @@ Both running and walking type workouts are compatible with Hactive since these w
 
 4. If you are using this application as a researcher you will need to enter weight and age details of each user corresponding to their workout. If however, you are using the application for personal use, simple set this data once in the Apple's health application. 
 
-![Alt text](img/health-app.png?raw=true "Apple Health App")
-
 5. Exported the data as a CSV file.
 
-
-### Consent form
-
-A default consent form is available in the application. Manipulate it to suit your scientific study.
-
-![Alt text](img/labelling-data.png?raw=true "Labelling Data")
-![Alt text](img/consent-form.png?raw=true "Consent Form")
+![Alt text](img/health-app.png?raw=true "Apple Health App")
 
 ### Calculating HRDP
 
@@ -79,6 +71,13 @@ We have utilised the Swifts Core Data framework which is used to manage the mode
 Swift has a medically orientated API [ResearchKit](http://researchkit.org/), which was designed to support researchers and clinicians in conducting studies and collecting sensitive data. This kit allows medical researches to embed consent flows, surveys and real-time dynamic, active tasks into an application. A template consent form has been installed in Hactive to allow future researchers to incorporate their own approved consent document once one is created. Like ResearchKit, HealthKit was developed to manage, monitor and safely store sensitive medical health data. To avoid the management of sensitive data such as heart rate, Hactive has offloaded this to HealthKit. By making fetch requests to HealthKit rather than storing the data within the application, we avoid managing the massive data pile that will inevitably build up as a result of recording and storing workouts as well as the security risks associated with this data 
 
 As a simple evaluation, we recorded twenty-five workouts, which were stored in HealthKit on a test mobile device. Extraction of all these workouts from HealthKit took an average of 0.15 seconds. Of the twenty-five workouts, the average length is twenty-seven minutes. To load a single workout of this length takes 0.5 seconds. The longest workout of 104 minutes, took 4.0 seconds to load, which we attribute to the increase in the number of HRDP extracted during such a lengthy exercise. We are generally comfortable with the runtime performance.
+
+### Consent form
+
+A default consent form is available in the application. Manipulate it to suit your scientific study.
+
+![Alt text](img/labelling-data.png?raw=true "Labelling Data")
+![Alt text](img/consent-form.png?raw=true "Consent Form")
 
 ## Privacy
 
