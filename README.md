@@ -21,7 +21,7 @@ Install steps
 
 ## Known Problems
 
-Under Hactive's current implementation, we have decided not to put the app on the app store. As such, when you download and use this application through Xcode, the code-signing tool only validates the app for 7 days. This means that after this period, the app will cease to work and will require you to build it again through Xcode. We understand the inconvenience this causes to the fundamental usability of the application. However, until we decide the app is ready for the app store, this problem will subsist. The silver lining is that because the data is managed by Apple's Health app, the data will persist after the application reinstalls.
+Under Hactive's current implementation, we have decided not to put the app on the app store. As such, when you download and use this application through Xcode, the code-signing tool only validates the app for 7 days. This means that after this period, the app will cease to work and will require you to build it again through Xcode. We understand the inconvenience this causes to the fundamental usability of the application. However, until we decide the app is ready for the app store, this problem will subsist. The silver lining is that because the data is managed by Apple's Health app, the data will persist after the application reinstalls. When this problem occurs, do not uninstall the application but simply connect your device to Xcode and rebuild the app.
 
 ## How It Works
 
