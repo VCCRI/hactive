@@ -43,7 +43,7 @@ Both running and walking type workouts are compatible with Hactive since these w
 
 2. Open Hactive application on your iPhone to view the list of workouts. Select a workout to see a detailed graphical view along with the associated heart rate dynamic profiles.
 
-3. Add a title and a description of the workout along with the age and weight of the person who's workout this belongs to. Age and weight are used to determine the HRDP's of each workout. If no value is set, Hactive will take the values stored in Apples health app. Failing that, it will default to `age = 60` and `weight = 60kg`.
+3. Add a title and a description of the workout along with the age and weight of the person who's workout this belongs to. Age and weight are used to determine the HRDP's of each workout. If there is no value set, Hactive will take the values stored in Apples health app. Failing that, it will default to `age = 60` and `weight = 60kg`.
 
 4. If you are using this application as a researcher you will need to enter weight and age details of each user corresponding to their workout. If however, you are using the application for personal use, simple set this data once in the Apple's health application.
 
