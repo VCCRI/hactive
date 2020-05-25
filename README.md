@@ -1,6 +1,6 @@
 # Hactive
 
-Hactive a fully operational iOS application that extracts heart rate data from Apple’s smart-watches to construct heart rate profiles of an individual.
+Hactive an iOS application that extracts heart rate data from Apple’s smart-watches to construct heart rate profiles.
 
 ## Getting Started
 
@@ -98,8 +98,8 @@ Hactive takes your privacy very seriously. The data recorded by your Apple watch
 
 ## Authors
 
-* **Adam Goldberg** - *Initial work* - [LinkedIn](https://www.linkedin.com/in/goldadamb/)
-* **Dr. Joshua Ho** - *Initial work*  - [Other Research](https://scholar.google.com/citations?hl=en&user=3kVPIhQAAAAJ&view_op=list_works&sortby=pubdate)
+* **Adam Goldberg** - *Core development* - [LinkedIn](https://www.linkedin.com/in/goldadamb/)
+* **Dr. Joshua W. K. Ho** - *Research idea and supervision*  - [Ho Laboratory](https://holab-hku.github.io/)
 
 ## License
 
@@ -107,5 +107,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-The work was supported in part by funds from the National Health and Medical Research Council (1105271 to JWKH),
-and the National Heart Foundation (100848 to JWKH). We thank Djordje Djordjevic, Andrian Yang and Eleni Giannoulatou for their helpful comments and discussion throughout the study.
+The work was supported in part by funds from the National Health and Medical Research Council of Australia, and the National Heart Foundation of Australia.
