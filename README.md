@@ -65,6 +65,8 @@ Once all the HR profiles have been extracted, Hactive can scale the profile down
 
 ![Alt text](img/hrdp.png?raw=true "HRDP")
 
+The above are examples of heart rate profile views of Hactive. (a) The heart rate time series of an entire workout. The alternating pairs of red and black dots represent unique zones of heightened physical activity within the scope of the entire workout as identified by an algorithm in Hactive. The first pair of red dots indicates the start and end of the first zone. The following pair of black dots indicates the second zone et al. (b) Heart rate profiles of multiple zones of physical activity scaled and interlaced onto a single chart for visual comparison. The beginning of each zone is marked by blue dots, the peak HR is marked by red dots and the end of each zone is marked by green dots.
+
 ### Data management
 
 HRDP are not persisted. They are constructed every time you view a workout and destroyed when you exit the view workout page. This means most of the computation is done when viewing each individual workout. The only data that is persisted is the label, description, age and weight entered by the user.
